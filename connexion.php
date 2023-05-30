@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
             $_SESSION['password'] = $password;
             $_SESSION['id'] = $selectUser->fetch()['id'];
             $_SESSION['nom'] = $selectUser->fetch()['nom'];
-            echo "Bienvenue, ",$_SESSION['nom'] ;
+            header("Location : 'index.php'");
         }else{
             echo "Adresse mail ou mot de passe incorrecte";
         }

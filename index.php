@@ -3,6 +3,8 @@
 session_start();
 require_once('connection.php');
 
+echo "Bienvenue, ",$_SESSION['nom'], " ", $_SESSION['prenom'] ;
+
 ?>
 
 <!DOCTYPE html>
