@@ -19,7 +19,8 @@ if(isset($_POST['submit'])){
             $_SESSION['password'] = $password;
             $_SESSION['id'] = $selectUser->fetch()['id'];
             $_SESSION['nom'] = $selectUser->fetch()['nom'];
-            header("Location : 'index.php'");
+            $_SESSION['prenom'] = $selectUser->fetch()['prenom'];
+            header("Location : 'accueil.php'");
         }else{
             echo "Adresse mail ou mot de passe incorrecte";
         }
@@ -44,6 +45,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="email" required="required" autocomplete="off">
         <input type="password" name="password" required="required" autocomplete="off">
         <input type="submit" name="submit">
+        <a href="inscription.php">s'inscrire</a>
 
     </form>
 

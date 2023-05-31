@@ -91,6 +91,7 @@ if(isset($_POST['submit'])){
         </div>
 
         <button type="submit" name="submit" class="btn btn-primary">Enregistrer</button>
+        <a href="connexion.php">Se connecter</a>
 
     </form>
 </body>

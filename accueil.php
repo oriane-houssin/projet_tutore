@@ -1,14 +1,9 @@
 <?php
-
 session_start();
 require_once('connection.php');
 
-if(!isset($_SESSION['email'])){
-    header('Location:connexion.php');
-    die();
-}
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +14,14 @@ if(!isset($_SESSION['email'])){
     <title>Accueil</title>
 </head>
 <body>
+    
+    <?php // include 'templates/headerAccueil.php'; ?>
+    <div class="corps">
+        <img class="logo-square" src="media/logo-name-square.png" alt="logo et titre">
+        <h1>salle de sport sur <br> mesure & clés en <br> main</h1>
+    </div>
+    <div class="trait"></div>
     <?php echo "Bienvenue, ", $_SESSION['nom'], " ", $_SESSION['prenom']; ?>
+
 </body>
 </html>
