@@ -15,11 +15,16 @@ if(isset($_POST['submit'])){
 
         if($selectUser->rowCount() > 0){
 
-            $_SESSION['email'] = $email;
-            $_SESSION['password'] = $password;
             $_SESSION['id'] = $selectUser->fetch()['id'];
             $_SESSION['nom'] = $selectUser->fetch()['nom'];
             $_SESSION['prenom'] = $selectUser->fetch()['prenom'];
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            $_SESSION['type'] = $selectUser->fetch()['type'];
+            
+            
+            
+            
             header("Location : 'accueil.php'");
         }else{
             echo "Adresse mail ou mot de passe incorrecte";

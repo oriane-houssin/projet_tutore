@@ -1,0 +1,31 @@
+body{
+    background-color: #003F5D;
+    
+}
+.corps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-square{
+    width: 700px;
+    margin: 55px 0px 0px 75px;
+}
+h1{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 100px;
+    margin-right: 130px;
+}
+.trait{
+    position: absolute;
+    width: 650px;
+    height: 0px;
+    left: 890px;
+    top: 573px;
+    border: 10px solid #E8E349;
+}
