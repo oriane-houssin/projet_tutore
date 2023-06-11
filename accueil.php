@@ -22,7 +22,7 @@ require_once('connection.php');
         <h1>salle de sport sur <br> mesure & clés en <br> main</h1>
     </div>
     <div class="trait"></div>
-    <?php echo "Bienvenue, ", $_SESSION['nom'], $_SESSION['type']; ?>
+    <?php echo "Bienvenue, ", $_SESSION['nom'], $_SESSION['prenom']; ?>
 
 </body>
 </html>

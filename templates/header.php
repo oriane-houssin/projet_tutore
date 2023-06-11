@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <img src="../media/logo.png" alt="square logo" href="../accueil.php">
+        <img class="headerLogo" src="media/logo.png" alt="square logo" href="accueil.php">
         <ul>
             <?php
             if($_SESSION['type']=="client"){
